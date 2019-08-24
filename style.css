@@ -1,13 +1,21 @@
 body {
+    /* Typography */
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 18px;
     color: #777;
+    text-align: center;
+
+    /* Visual */
     background: #777;
     width: 960px;
+
+    /* Box Model */
+    margin: 0 auto;
 }
 
 #header, #nav, #section, #aside, #footer {
     background: #ebebeb;
+    margin-bottom: 20px;
 }
 
 #article {
@@ -20,6 +28,22 @@ h1, p {
     background: #ebebeb;
 }
 
+p {
+    display: block;
+}
+
 #section {
     width: 495px;
+    float: left;
+    margin-right: 20px;
+}
+
+#aside {
+    float: left;
+    width: 445px;
+    height: 1;
+}
+
+#footer {
+    clear: left;
 }
